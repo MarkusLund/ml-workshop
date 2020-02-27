@@ -22,8 +22,6 @@ We will use the MNIST dataset during the workshop.
 pip install -r requirements.txt
 ```
 
-### 2.
-
 ## Tips og triks
 
 - Tar det lang tid å trene nettverket? Hva med å se på flere treningsekempler på en gang.
