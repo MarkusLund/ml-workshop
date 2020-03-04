@@ -26,14 +26,20 @@ pip install -r requirements.txt
 
 - Does the network take a long time to train? What about letting the loss function look at multiple traning examples simultainously?
 
+### Keras has it all
+
+Theres is a lot of nice features and functions in Keras.
+
+I would recommend taking a look at `keras.optimizers` or `keras.losses`. You could of course write your own loss function or optimizer, which would be a great exercise!
+
 ### Adjust the data
 
-Adjusting and tweaking the data can improve the result as well as make it easier to use.
+Your data is everything. Adjusting and tweaking the data can improve the result as well as make it easier to use.
 
 Built-in functions which will be useful.
 
-- `.reshape()` Can be used on numpy matrices .
-- `.astype()` Can be used on numpy matrices .
+- `.reshape()` Can be used to reshape numpy matrices. [(Link to docs)](https://docs.scipy.org/doc/numpy/reference/generated/numpy.reshape.html)
+- `.astype('float32)` Can be used to change type of values in numpy matrices. (Hint: if python sees an integer divided by an integer, you will not recieve a decimal number.)
 - You will like this function -> `keras.utils.to_categorical`
 
 ### Visualization of the network/model
