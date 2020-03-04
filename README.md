@@ -22,27 +22,36 @@ We will use the MNIST dataset during the workshop.
 pip install -r requirements.txt
 ```
 
-## Tips og triks
+## Tips & tricks
 
-- Tar det lang tid å trene nettverket? Hva med å se på flere treningsekempler på en gang.
--
+- Does the network take a long time to train? What about letting the loss function look at multiple traning examples simultainously?
 
-### Visualiering av nettverket/modellen
+### Adjust the data
 
-#### Med tekst
+Adjusting and tweaking the data can improve the result as well as make it easier to use.
+
+Built-in functions which will be useful.
+
+- `.reshape()` Can be used on numpy matrices .
+- `.astype()` Can be used on numpy matrices .
+- You will like this function -> `keras.utils.to_categorical`
+
+### Visualization of the network/model
+
+#### Textual visualization
 
 ```python
 model.summary()
 ```
 
-#### Som bilde
+#### Generating a picture
 
 ```python
 from keras.utils import plot_model
 plot_model(model, to_file='model.png', show_shapes=True)
 ```
 
-PS: Generering av bilde krever:
+PS: Generating an image requires the following packages.
 
-- pydot - `pip install pydot`)
+- pydot - `pip install pydot`
 - graphviz - `brew install graphviz`
