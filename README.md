@@ -14,12 +14,38 @@ We will use the MNIST dataset during the workshop.
 - Keras as Machine Learning framework
 - Python requirements can be installed with `pip` and the `requirements.txt` file.
 
-## Tasks
+## Setup
 
-### 1. Setup the environment
+### Installing python
+
+Python and pip are preinstalled on MacOS (and Linux?) but those on Windows need to download and install python.
+
+Install the required dependencies with:
 
 ```bash
 pip install -r requirements.txt
+```
+
+You can then run your code using
+
+```bash
+python mnist.py
+```
+
+### Using Docker
+
+You can use the provided Dockerfile which will run your script in a linux environment with all dependencies installed. This is the easiest way of running your code if you have Docker installed. I do not however know how much Docker will affect performance.
+
+To run your code in Docker first build a image with
+
+```bash
+docker build -t mnist .
+```
+
+And then run the code with
+
+```bash
+docker run mnist
 ```
 
 ### 2. Train a model which recognizes digits
