@@ -22,6 +22,18 @@ We will use the MNIST dataset during the workshop.
 pip install -r requirements.txt
 ```
 
+### 2. Train a model which recognizes digits
+
+### 3. Improve your model
+
+There are many techniques for improving your artifical neural network.
+
+### 4. GAN
+
+Why not generate your own unique handwritten digits, without drawing? Generative adversarial networks have become increasingly popular lately. And GANs are not too diffucult to create and train using Keras.
+
+[Look at the GAN markdown file which consists images of what GAN contains.](GAN.md)
+
 ## Tips & tricks
 
 - Does the network take a long time to train? What about letting the loss function look at multiple traning examples simultainously?
