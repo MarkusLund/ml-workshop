@@ -22,5 +22,6 @@ history = model.fit(x_train, y_train,
 score = model.evaluate(x_test, y_test)
 print('Test loss:', score[0])
 print('Test accuracy:', score[1])
+print('Param count:', str(model.count_params()))
 
-postScore("Navn", score[0], score[1])   
+postScore("Markus", score[0], score[1], model.count_params())   

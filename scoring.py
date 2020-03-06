@@ -1,9 +1,9 @@
 import requests
 import json
 
-def postScore(name, loss, acc):
+def postScore(name, loss, acc, params):
     headers = {
-        'Authorization': 'Bearer TOKEN',
+        'Authorization': 'Bearer keyKUg4iQiVVtCOmF',
         'Content-Type': 'application/json',
     }
 
@@ -11,7 +11,8 @@ def postScore(name, loss, acc):
         "fields": {
             "Navn": name,
             "Accuracy": acc,
-            "Loss": loss
+            "Loss": loss,
+            "Params": params
         }
     }
 
