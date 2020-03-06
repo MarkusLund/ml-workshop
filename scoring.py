@@ -13,7 +13,7 @@ def postScore(name, loss, acc, params, dataset):
             "Accuracy": acc,
             "Loss": loss,
             "Params": params,
-            "Dataset" dataset
+            "Dataset": dataset
         }
     }
 
