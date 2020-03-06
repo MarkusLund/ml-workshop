@@ -24,4 +24,4 @@ print('Test loss:', score[0])
 print('Test accuracy:', score[1])
 print('Param count:', str(model.count_params()))
 
-postScore("Markus", score[0], score[1], model.count_params())   
+postScore("Navn", score[0], score[1], model.count_params(), "mnist/fashion")   

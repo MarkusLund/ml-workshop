@@ -1,7 +1,7 @@
 import requests
 import json
 
-def postScore(name, loss, acc, params):
+def postScore(name, loss, acc, params, dataset):
     headers = {
         'Authorization': 'Bearer keyKUg4iQiVVtCOmF',
         'Content-Type': 'application/json',
@@ -12,7 +12,8 @@ def postScore(name, loss, acc, params):
             "Navn": name,
             "Accuracy": acc,
             "Loss": loss,
-            "Params": params
+            "Params": params,
+            "Dataset" dataset
         }
     }
 
