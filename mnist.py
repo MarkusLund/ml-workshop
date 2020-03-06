@@ -22,3 +22,5 @@ history = model.fit(x_train, y_train,
 score = model.evaluate(x_test, y_test)
 print('Test loss:', score[0])
 print('Test accuracy:', score[1])
+
+postScore("Navn", score[0], score[1])   
